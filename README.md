@@ -47,6 +47,11 @@
 └── webpack.prod.conf.js                    // webpack 生产配置
 ```
 
+##### 文件目录变更
+
+> api 文件夹放到了【pages/detail】页面文件夹内 -- 避免 命名冲突 问题；
+
+
 ## 构建流程
 
 #### 安装依赖
