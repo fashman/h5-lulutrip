@@ -1,0 +1,76 @@
+.lulu-plus {
+  padding-left: 30px;
+
+  .lulu-plus-slide {
+    margin-top: 40px;
+
+    /deep/ .swiper-slide {
+      width: 450px;
+      margin-right: 30px;
+    }
+
+    .lulu-slide-item {
+      width: 450px;
+      height: 219px;
+      position: relative;
+
+      .lulu-slide-img {
+        display: block;
+        width: 450px;
+        height: 160px;
+        border-radius: 8px;
+      }
+
+      .lulu-slide-info {
+        background: #fff;
+        position: absolute;
+        margin: auto;
+        width: 410px;
+        left: 0;
+        right: 0;
+        border-radius: 8px;
+        text-align: center;
+        top: 130px;
+        padding-top: 20px;
+
+        .info-title {
+          font-size: 24px;
+          color: #222222;
+          font-weight: bold;
+        }
+
+        .info-des {
+          font-size: 20px;
+          color: #666666;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .lulu-pagination {
+      text-align: center;
+      margin-top: 20px;
+
+      /deep/ .swiper-pagination-bullet-active {
+        width: 16px !important;
+        height: 16px !important;
+        box-sizing: border-box;
+        background: transparent !important;
+        border: 3px solid #00bbee !important;
+        border-radius: 2px !important;
+        margin-right: 10px !important;
+      }
+      /deep/ .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        border-radius: 1px;
+        background: #b0deff;
+        opacity: 1;
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.tabs-container {
+  position: relative;
+  padding-top: 20px;
+  height: 60px;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 1;
+
+  &:before {
+    position: absolute;
+    content: " ";
+    left: 20px;
+    right: 20px;
+    top: 78px;
+    border-top: 1px solid #ddd;
+    height: 0;
+    z-index: 3;
+  }
+
+  &:after {
+    position: absolute;
+    content: " ";
+    width: 20px;
+    height: 40px;
+    right: 0;
+    top: 0px;
+    background: rgba(255, 255, 255, .6);
+    box-shadow: -15px -4px 30px #fff;
+    z-index: 4;
+  }
+
+  .tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    height: 130px;
+    background-color: #fff;
+    -webkit-overflow-scrolling: touch;
+
+    a {
+      position: relative;
+      color: #222;
+      font-size: 26px;
+      padding: 24px 30px;
+
+      &.active {
+        &:after {
+          position: absolute;
+          left: 24px;
+          right: 24px;
+          bottom: 0;
+          content: " ";
+          height: 0;
+          border-bottom: 4px solid #36bae8;
+        }
+      }
+    }
+  }
+}
